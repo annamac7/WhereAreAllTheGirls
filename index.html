@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A brief history of women in tech">
+    <meta name="keywords" content="Women in STEM, tech industry, gender-gap, girls who code, computer science">
+    <meta name="author" content="Annie Rudisill">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women in Tech</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Share+Tech+Mono" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src ="https://www.google.com/jsapi"></script>
+    <link rel="shortcut icon" href="img/television.ico" type="image/x-icon"/>
+  </head>
+  <body>
+  <!-- <img id="bg_img" src="img/p4bg.jpg" alt="glitchy background"> -->
+  <div id="top">
+    <a href="http://annierudisill.com/web-design/"><img id="logo" src="img/wp_logofinal.png" alt="logo"></a>
+  </div>
+    <div id="header">
+      <h1>Where are all the Girls<span id="load">?</span></h1>
+
+
+
+      <h3>The number of women in the field of computer science are <span id="chartBtn">significantly lower</span> than the number of men. Why?  In the tech industry men are given a huge advantage over their female counterparts. <br> <br>Use the slider below to explore the disadvantages that women in tech face from an early age. </h3>
+      <div id="chart">
+        <span id="closeAgain">Close</span>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+         <div id="chartDiv">
+         </div>
+      </div>
+
+
+      <button id="sourceBtn">Sources</button>
+    </div>
+
+    <div class="modal" id="myModal">
+      <div class="modal_content">
+        <span id="close">X</span>
+        <p>
+          <a href="https://www.dol.gov/wb/occupations_interactive_txt.htm">United States Department of Labor</a><br> <a href="https://ngcproject.org/statistics">National Girls Collaborative Project</a>
+          <br>
+          <a href="https://www.computerscience.org/resources/women-in-computer-science/">Women in Computer Science: Getting Involved in STEM</a> <br>
+          <a href="https://www.wired.com/story/computer-science-graduates-diversity/">Women and Minorities in Tech, By the Numbers</a> <br> <a href="https://www.ncwit.org/">NCWIT</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="slidecontainer">
+
+        <input type="range" min="10" max="40" value="1" class="slider" id="myRange">
+        <p  id="a">
+          &#183;
+
+        </p>
+        <p  id="b">
+        &#183;
+
+        </p>
+        <p  id="c">
+        &#183;
+
+        </p>
+        <p id="d">
+        &#183;
+
+        </p>
+
+        <div id="demo"></div>
+    </div>
+    <div id="timeline">
+
+      <!-- <div id="history" class="event">
+        <h2>Early History</h2>
+        <h5>SOME TEXT HERE</h5>
+      </div> -->
+      <div id="k-8" class="event">
+        <h2>K-8 Education</h2>
+        <img class="slider_img" id="e_img" src="img/schoolgirl.png" alt="elementary school girl">
+
+        <h5>From a young age girls are exposed to marketing techniques that assocaite jobs in the tech industry with men. <br>There are few female role models in tech for young girls to look up to and inspire to be like.</h5>
+      </div>
+      <div id="highschool" class="event">
+        <h2>High School</h2>
+        <img class="slider_img" id="hs_img" src="img/hs_student.png" alt="high school students">
+        <h5>Girls repersent 56% of AP test takers, but only 19% of AP Computer Science test takers.This is not a statistic that is applicable to all STEM subjects, as girls account for 46% of the AP Calc test takers. <br> Additionally, enrollment in advanced math and science courses do not differ by gender. But they do differ considerably when it comes to computer sciences courses. </h5>
+      </div>
+      <div id="university" class="event">
+        <h2>University Level</h2>
+        <img class="slider_img" id="grad_img" src="img/grad.png" alt="university student">
+        <h5>Women earn 57% of all undergraduate degrees, but only 18% of computer science degrees. <br> Some women admitted that they feel intimidated by the major since at most schools it is dominated by males. They feel that other liberal arts majors are targeted more positivly towards girls</h5>
+      </div>
+      <div id="workplace" class="event">
+        <h2>In the Workplace</h2>
+        <img class="slider_img" id="wp_img" src="img/Female-Developer.png" alt="women in the workplace">
+        <h5>Women repersent half of the college educated workforce in the United States, but only repersent a quarter of the Computer Science workforce. <br>The hiring process for many computer science jobs have been reported to be biased towards males. Many companies don't have quotas for the number of women that they are required to hire. <br>There is also a huge gender wage gap that discourages women from applying to tech jobs. </h5>
+      </div>
+    </div>
+
+
+    </div>
+    <!-- <div class="slidecontainer">
+        <input type="range" min="1" max="4" value="1" class="slider" id="myRange">
+        <div id="demo"></div> -->
+    </div>
+    <div id="solution_container">
+
+        <h2 id="code_btn">Run the Code for Some Solutions</h2>
+
+
+
+      <div id="solution" class="tooltip" >
+        <span id="tooltiptext">
+          The code replaces the problems with solutions. To start, it converts problems and solutions into variables which are then placed into an array (an object that is able to hold multiple variables). The code then loops through the array 4 times (for the number of problems in the problem array). For each loop it subtracts the problem from the current situation and replaces it with a solution. This new data is stored in a new array called "fixedSolution". <br> To see the results click "console.log(fixedSolution)"
+        </span>
+      <p id="solution_txt">
+  var fixedSolution = ""; <br><br>
+  var solutions = [“create mentorship programs”, “make it more approachable ”, “refine the field”, “business emplace gender quotas for their hiring processes’]; <br><br>
+  var problems = [“no female role models” , “classes targeted more towards men” , “stereotypes in the field”, “biased hiring processes”]; <br><br>
+  var currentSituation = problems; <br><br>
+
+  function getMoreGirls() { <br>
+&nbsp; &nbsp;for(i=0; i < problems.length; i++) { <br>
+      &nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;fixedSolution = (currentSituation - problems[i] + solutions[i]; <br>
+        &nbsp; &nbsp;  } <br>
+        &nbsp; &nbsp;  return fixedSolution; <br>
+      } <br>
+      <a href="fixed.html">console.log(fixedSolution);</a>
+      <span id="log"></span>
+
+      </p>
+    </div>
+      </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

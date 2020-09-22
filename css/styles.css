@@ -1,0 +1,637 @@
+#logo {
+  width: 5%;
+
+  top: 5px;
+  position: fixed;
+}
+
+#chartBtn {
+  text-decoration: underline;
+  font-weight: bold;
+  color: DarkTurquoise;
+  cursor: pointer;
+}
+
+#chart {
+  max-width: 70%;
+}
+
+#chart
+
+h3 {
+  font-size: 14px;
+}
+.tooltip #tooltiptext {
+  visibility: hidden;
+  width: 60%;
+  background-color: lightgrey;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+.tooltip:hover #tooltiptext {
+  visibility: visible;
+}
+
+
+#header {
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+  padding: 0px 10%;
+}
+
+
+body {
+  /* background-image: url('../img/p4bg.jpg'); */
+  background-color: #EBF7F5;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 4000;
+  top: 25%;
+  width: 100%;
+  height: 50%;
+  overflow: auto;
+  appearance: none;
+}
+
+ a {
+  color: navy;
+  font-weight: bolder;
+
+}
+
+
+#chart {
+  position: absolute;
+  top: 2%;
+}
+
+#chartDiv {
+  width: 100%;
+}
+
+#closeAgain {
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 2px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+#close {
+  float: right;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.modal_content {
+  background-color: #95f7d2;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  top: 15%;
+  padding: 4px;
+  font-family: 'Open Sans' , sans-serif;
+  border-radius: 12px;
+  box-shadow: 5px 10px 18px lightcyan;
+}
+
+#sourceBtn {
+  background-color: DarkTurquoise;
+  border: DarkTurquoise 2px;
+  border-radius: 12px;
+  width: 20%;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+ h1 {
+  font-size: 40px;
+  color: DarkTurquoise;
+}
+
+h2 {
+  font-family: 'Share Tech Mono', monospace;
+
+}
+
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 70px;
+  padding-right: 70px;
+  font-size: 15px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+
+  #fixed_header {
+    color: black;
+    font-size: 25px;
+  }
+
+
+
+#e_img {
+  max-width: 25%;
+}
+
+#hs_img {
+  max-width: 15%;
+}
+
+#grad_img, #wp_img {
+  max-width: 30%;
+}
+
+#k-8 {
+  display: block;
+}
+
+#demo {
+  opacity: 0;
+}
+
+.event{
+  align-content: center;
+  text-align: center;
+  display: block;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: none;
+  top: 55%;
+  z-index: -1;
+
+}
+#k-8, #highschool, #university, #workplace {
+  position: absolute;
+  top: 75%;
+}
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  /*need media query here */
+  padding-top: 5px;
+  text-align: center;
+  z-index: -1;
+  position: absolute;
+  top: 67%;
+}
+
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 75%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: linear-gradient(90deg, rgba(176,255,0,1) 0%, rgba(0,236,255,1) 100%); /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  border-radius: 25px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  z-index: -10;
+  cursor: pointer;
+}
+
+#a {
+  left: 14%;
+}
+
+
+#b {
+  left: 38%;
+}
+
+#c {
+  right: 38%;
+}
+
+#d {
+  right: 14%;
+}
+#a, #b, #c, #d {
+  position: absolute;
+  font-size: 40px;
+  padding-top: 0;
+  top: 40%;
+  margin-top: 0;
+  color: black;
+  font-size: 50px;
+}
+
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: DarkTurquoise; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 25px;
+
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: DarkTurquoise; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+#solution_container {
+  position: absolute;
+  top: 144%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: block;
+  align-content: center;
+  text-align: center;
+}
+
+#solution {
+  width: 50%;
+  background: DarkTurquoise;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Share Tech Mono', monospace;
+  padding: 5px;
+  text-align: left;
+  border-radius: 8px;
+}
+
+#solution_txt {
+  font-weight: bold;
+  color: white;
+}
+
+#code_btn {
+  background-color: DarkTurquoise;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  border-radius: 8px;
+  color: white;
+}
+
+h5 {
+  background-color: #95f7d2;
+  border-radius: 12px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+
+@media screen and (min-width: 844px) {
+  #logo {
+    width: 5%;
+
+    top: 5px;
+    position: fixed;
+  }
+
+  #chartBtn {
+    text-decoration: underline;
+    font-weight: bold;
+    color: DarkTurquoise;
+  }
+
+
+  #header {
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+    padding: 0px 10%;
+  }
+
+
+  body {
+    /* background-image: url('../img/p4bg.jpg'); */
+      background-color: #EBF7F5;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 4000;
+    top: 25%;
+    width: 100%;
+    height: 50%;
+    overflow: auto;
+    appearance: none;
+  }
+
+  #fixed_header {
+    color: black;
+    font-size: 50px;
+
+  }
+
+  #fixed_sub {
+
+  }
+
+  #chart {
+    position: absolute;
+    top: 2%;
+  }
+
+  #chart {
+    max-width: 70%;
+  }
+
+
+  #chartDiv {
+    max-width: 70%;
+  }
+
+  #closeAgain {
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+    padding: 3px;
+  }
+
+  #close {
+    float: right;
+    font-weight: bolder;
+  }
+
+  .modal_content {
+    background-color: #95f7d2;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 15%;
+    padding: 4px;
+    font-family: 'Open Sans' , sans-serif;
+    border-radius: 12px;
+    box-shadow: 5px 10px 18px lightcyan;
+  }
+
+  #sourceBtn {
+    background-color: DarkTurquoise;
+    border: DarkTurquoise 2px;
+    border-radius: 12px;
+    width: 10%;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+
+  }
+
+   h1 {
+    font-size: 50px;
+    color: DarkTurquoise;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-family: 'Share Tech Mono', monospace;
+  }
+
+  h5 {
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 15px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+h3 {
+  font-size: 18px;
+}
+
+  #e_img {
+  max-width: 25%;
+  }
+
+  #hs_img {
+    max-width: 15%;
+  }
+
+  #grad_img, #wp_img {
+    max-width: 30%;
+  }
+
+  #k-8 {
+    display: block;
+  }
+
+  #demo {
+    opacity: 0;
+  }
+
+  .event{
+    align-content: center;
+    text-align: center;
+    display: block;
+    height: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: none;
+
+    z-index: -1;
+
+  }
+  #k-8, #highschool, #university, #workplace {
+    position: absolute;
+    top: 54%;
+  }
+
+  .slidecontainer {
+    width: 100%; /* Width of the outside container */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /*need media query here */
+    padding-top: 5px;
+    text-align: center;
+    z-index: -1;
+    position: absolute;
+    top: 47%;
+  }
+
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 75%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: linear-gradient(90deg, rgba(176,255,0,1) 0%, rgba(0,236,255,1) 100%); /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    border-radius: 25px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    z-index: -10;
+  }
+
+  #a {
+    left: 14%;
+  }
+
+  #b {
+    left: 38%;
+  }
+
+  #c {
+    right: 38%;
+  }
+
+  #d {
+    right: 14%;
+  }
+  #a, #b, #c, #d {
+    position: absolute;
+    font-size: 25px;
+    padding-top: 0;
+    top: 40%;
+    margin-top: 0;
+    color: black;
+    font-size: 50px;
+  }
+
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: DarkTurquoise; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 25px;
+
+  }
+
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: DarkTurquoise; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+  #solution_container {
+    position: absolute;
+    top: 150%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: block;
+    align-content: center;
+    text-align: center;
+  }
+
+  #solution {
+    width: 50%;
+    background: DarkTurquoise;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Share Tech Mono', monospace;
+    padding: 5px;
+    text-align: left;
+    border-radius: 8px;
+  }
+
+  #solution_txt {
+    font-weight: bold;
+    color: white;
+  }
+
+  #code_btn {
+    background-color: DarkTurquoise;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border-radius: 8px;
+    color: white;
+  }
+
+
+
+  h5 {
+    background-color: lightgrey;
+    border-radius: 12px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+
+  }
+
+  #back {
+    background-color: DarkTurquoise;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px;
+    border-radius: 8px;
+    color: white;
+  }
+
+
+
+  .tooltip #tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: lightgrey;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    right: 77%;
+
+  }
+
+  .tooltip:hover #tooltiptext {
+    visibility: visible;
+  }
+}
